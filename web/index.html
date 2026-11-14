@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UbaNova - Pixel Art Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>UbaNova Generator</h1>
+      <p class="subtitle">Text-to-sprite generator using 16x16 palette tokens and CLIP guidance.</p>
+    </header>
+
+    <main>
+      <section class="panel">
+        <div class="form-group">
+          <label for="prompt">Text Prompt</label>
+          <input type="text" id="prompt" placeholder="e.g. golden knight with shield" value="golden knight with shield" autofocus>
+        </div>
+
+        <div class="presets-row">
+          <span class="presets-label">Presets:</span>
+          <button type="button" class="preset-chip" data-prompt="golden knight with shield">Golden Knight</button>
+          <button type="button" class="preset-chip" data-prompt="emerald magic staff">Magic Staff</button>
+          <button type="button" class="preset-chip" data-prompt="wooden chest with lock">Wooden Chest</button>
+          <button type="button" class="preset-chip" data-prompt="red health potion bottle">Health Potion</button>
+        </div>
+
+        <div class="controls-grid">
+          <div class="form-group">
+            <label for="count">Variants</label>
+            <select id="count">
+              <option value="1">1 sprite</option>
+              <option value="2">2 sprites</option>
+              <option value="4" selected>4 sprites</option>
+              <option value="8">8 sprites</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cfg">CFG Scale <span class="label-hint">Guidance</span></label>
+            <div class="slider-wrap">
+              <input type="range" id="cfg" min="1.0" max="7.0" step="0.5" value="3.0">
+              <span class="val-badge" id="cfg-val">3.0</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="temp">Temperature <span class="label-hint">Sampling</span></label>
+            <div class="slider-wrap">
+              <input type="range" id="temp" min="0.5" max="1.5" step="0.1" value="1.0">
+              <span class="val-badge" id="temp-val">1.0</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="seed">Seed <span class="label-hint">Optional</span></label>
+            <input type="text" id="seed" placeholder="Random">
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="gen-btn" class="btn-primary" type="button">Generate</button>
+          <span id="status" class="status-line">Ready</span>
+        </div>
+
+        <div id="error-box" class="error-box" role="alert"></div>
+      </section>
+
+      <section class="output-section">
+        <div class="output-header">
+          <span class="output-title">Generated Output</span>
+          <div id="grid-action" style="display: none;">
+            <a id="download-grid-btn" class="btn-secondary" download="sprite-sheet.png">Download Sheet</a>
+          </div>
+        </div>
+
+        <div id="results-area">
+          <div class="empty-state">No sprites generated yet. Enter a prompt above and click Generate.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      UbaNova | 42.4M parameters | 16x16 palette tokens
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
