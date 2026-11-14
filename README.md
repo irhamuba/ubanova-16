@@ -1,8 +1,12 @@
 # UbaNova-16
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24214385.svg)](https://doi.org/10.5281/zenodo.24214385)
+
 **Text to 16×16 pixel-art game sprites.** UbaNova-16 is a small (42.4M-parameter) autoregressive transformer that draws a sprite one pixel at a time from an English prompt. Every pixel is an exact palette color and the background is truly transparent, so the output is clean pixel art with no blur and no post-processing.
 
 Created by **Muhammad Fahril Irkham** ([@UbaNova](https://x.com/UbaNova)) · [GitHub](https://github.com/irhamuba) · [Hugging Face](https://huggingface.co/ubanova)
+
+📄 **Paper:** [doi:10.5281/zenodo.24214385](https://doi.org/10.5281/zenodo.24214385) (Zenodo)
 
 ![Samples](assets/samples.png)
 
@@ -137,10 +141,12 @@ and keep the `NOTICE` file when redistributing.
 ```bibtex
 @misc{irkham2026ubanova,
   author       = {Muhammad Fahril Irkham},
-  title        = {UbaNova-16: A Compact Autoregressive Transformer for Text-to-Sprite Generation},
+  title        = {UbaNova: A Compact Autoregressive Transformer for Text-to-Sprite Generation at 16x16},
   year         = {2026},
-  howpublished = {\url{https://github.com/irhamuba/ubanova-16}},
-  note         = {Model weights: \url{https://huggingface.co/ubanova/UbaNova-16}}
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.24214385},
+  url          = {https://doi.org/10.5281/zenodo.24214385},
+  note         = {Code: \url{https://github.com/irhamuba/ubanova-16}, weights: \url{https://huggingface.co/ubanova/UbaNova-16}}
 }
 ```
 
@@ -163,3 +169,4 @@ Please double-check the network before sending; funds sent on the wrong network 
 - X: [@UbaNova](https://x.com/UbaNova)
 - GitHub: [irhamuba](https://github.com/irhamuba)
 - Hugging Face: [ubanova](https://huggingface.co/ubanova)
+- Paper: [Zenodo, doi:10.5281/zenodo.24214385](https://doi.org/10.5281/zenodo.24214385)
