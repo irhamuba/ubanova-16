@@ -144,6 +144,20 @@ and keep the `NOTICE` file when redistributing.
 }
 ```
 
+## Support the project
+
+If UbaNova is useful to you, donations help pay for GPU time for the next models (32×32 and 64×64).
+
+| Network | Address |
+|---|---|
+| EVM (Ethereum, BNB Chain, Polygon, Base, Arbitrum, …) | `0x3e888de8c66d2efc9456d730c566563e04ed63e0` |
+| Solana | `9kSnpiHjrrFMrg8PQXAytDYwtjDcDNzc1xDnDq3AxkWY` |
+| Tron (TRX / TRC-20) | `TLvdtLrzknmP4Xjkc59w8UwzGERBDS5ByW` |
+| Bitcoin (Taproot) | `bc1p7hhnfzamcp58n093jfd5ncxz55mejruscwjsclqe5esd86ptxx9q35mqdm` |
+| Sui | `0xa5c680ee5ef209134979eeac30cc192fb5e3cf40cb40483fbca50c229b07d085` |
+
+Please double-check the network before sending; funds sent on the wrong network cannot be recovered.
+
 ## Links
 
 - X: [@UbaNova](https://x.com/UbaNova)
